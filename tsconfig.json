@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "strict": false,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "outDir": "./build",
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2015", "es2016", "esnext.asynciterable"]
+  }
+}

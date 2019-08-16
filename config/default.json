@@ -1,0 +1,11 @@
+{
+  "db": {
+    "mongodb": {
+      "connectionUrl": "mongodb://localhost:27017/",
+      "database": "sRideDb"
+    }
+  },
+  "logger": {
+    "level": "debug"
+  }
+}

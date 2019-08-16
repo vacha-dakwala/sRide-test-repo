@@ -1,0 +1,41 @@
+{
+  "name": "sride-test-repo",
+  "version": "1.0.0",
+  "description": "This project contains a demo nodeJS project for the test purpose",
+  "main": "./src/server",
+  "scripts": {
+    "tsc": "tsc",
+    "server": "node build/server.js",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "start": "tsc-watch --outDir ./build --onSuccess \"npm run server -- --mode=http\" --onFailure \"echo ERROR! Compilation Failed\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vacha-dakwala/sRide-test-repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vacha-dakwala/sRide-test-repo/issues"
+  },
+  "homepage": "https://github.com/vacha-dakwala/sRide-test-repo#readme",
+  "dependencies": {
+    "@types/express": "^4.17.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "winston": "^3.2.1",
+    "mongodb": "^2.2.33",
+    "config": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.0",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "ts-node": "^8.3.0",
+    "tsc-watch": "^1.0.27",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  }
+}
