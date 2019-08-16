@@ -22,4 +22,4 @@ $ npm run test
 $ npm start
 ```
 
-4. To check the forecast data: [Click on this link](localhost:3001/weather/forecast)
+4. To check the forecast data: [http://localhost:3001/weather/forecast](http://localhost:3001/weather/forecast)
