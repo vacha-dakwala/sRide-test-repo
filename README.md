@@ -4,22 +4,22 @@ This repository is for fetching the weather forecasting data if the current date
 
 ## Setup
 
-1. Clone the repository and fire the command on terminal:
+1. Install npm packages:
 
 ```bash
 $ npm i
 ```
 
-2. To run the code in local fire the command on terminal:
-
-```bash
-$ npm start
-```
-
-3. To run the test cases hit the command on terminal:
+2. Run test cases:
 
 ```bash
 $ npm run test
 ```
 
-4. To check the forecast data hit: localhost:3001/weather/forecast as GET method
+3. Start server:
+
+```bash
+$ npm start
+```
+
+4. To check the forecast data: [Click on this link](localhost:3001/weather/forecast)
