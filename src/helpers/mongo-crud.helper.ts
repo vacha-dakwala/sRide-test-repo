@@ -1,11 +1,15 @@
 import logger from "../logger";
 import { get } from "config";
+import { AuditData } from "./../types";
 
 var MongoClient = require("mongodb").MongoClient;
 
 export class MongoCrudHelper {
   private static client: any;
 
+  /**
+   * creating db connection object if not exist
+   */
   public static async getConnection() {
     logger.debug(`inside getConnection`);
     try {
@@ -23,7 +27,11 @@ export class MongoCrudHelper {
     }
   }
 
-  public static async insertAuditData(data: any) {
+  /**
+   * inserting audit data into userAudits collection
+   * @param data
+   */
+  public static async insertAuditData(data: AuditData) {
     logger.debug(`inside insertAuditData`);
     try {
       let db = await this.getConnection();

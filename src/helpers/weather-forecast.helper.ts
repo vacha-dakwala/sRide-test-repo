@@ -6,6 +6,9 @@ const weatherForecastJson = JSON.parse(
 );
 
 export class WeatherForecastHelper {
+  /**
+   * getting the weather forecasting data if the current date is prime number else send 'Date is not prime so no date' as response
+   */
   public static getWeatherForecastData() {
     logger.debug(`inside getWeatherForecastData()`);
     try {
@@ -20,9 +23,16 @@ export class WeatherForecastHelper {
     }
   }
 
+  /**
+   * checking the prime number for the given date
+   * @param date current day's date
+   */
   public static checkPrime(date: number) {
     logger.debug(`inside checkPrime()`);
-    if (date == 1 || date == 2) {
+    if (date === 1) {
+      return false; // 1 is unique number that means non-prime number
+    }
+    if (date === 2) {
       return true;
     }
     for (var i = 2; i < date; i++) {
