@@ -25,7 +25,7 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "winston": "^3.2.1",
-    "mongodb": "^2.2.33",
+    "mongodb": "^3.1.13",
     "config": "^2.0.1"
   },
   "devDependencies": {
