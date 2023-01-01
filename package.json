@@ -26,7 +26,7 @@
     "fs": "0.0.1-security",
     "winston": "^3.2.1",
     "mongodb": "^2.2.33",
-    "config": "^2.0.1"
+    "config": "^3.3.8"
   },
   "devDependencies": {
     "@types/chai": "^4.2.0",
